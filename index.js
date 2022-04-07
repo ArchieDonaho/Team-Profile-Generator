@@ -45,13 +45,13 @@ const testIntern = [
 
 
 initialize = () => {
-    // const team = new Team().start();
+    const team = new Team().start();
 
     //test
-    html = generateHTML(testManager, testEngineer, testIntern);
-    fs.writeFile('./dist/index.html', html, error => {
-        console.log('HTML Written')
-    })
+    // html = generateHTML(testManager, testEngineer, testIntern);
+    // fs.writeFile('./dist/index.html', html, error => {
+    //     console.log('HTML Written')
+    // })
 };
 
 initialize();
