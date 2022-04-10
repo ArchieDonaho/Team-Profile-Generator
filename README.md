@@ -1,88 +1,29 @@
-# Team-Profile-Generator
 
-GIVEN a command-line application that accepts user input:
+# Team Profile Generator
 
-WHEN I am prompted for my team members and their information
-THEN an HTML file is generated that displays a nicely formatted team roster based on user input
+## Description
 
-WHEN I click on an email address in the HTML
-THEN my default email program opens and populates the TO field of the email with the address
+This application will help a user build an html webpage to display a team of workers involving a manager, engineers, and interns
 
-WHEN I click on the GitHub username
-THEN that GitHub profile opens in a new tab
+## Table of Contents
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
 
+## Installation
 
-WHEN I start the application
-THEN I am prompted to enter the team manager’s name, employee ID, email address, and office number
+The application can be installed by downloading it from [here](https://github.com/ArchieDonaho/Team-Profile-Generator)
 
-WHEN I enter the team manager’s name, employee ID, email address, and office number
-THEN I am presented with a menu with the option to add an engineer or an intern or to finish building my team
+## Usage
 
-WHEN I select the engineer option
-THEN I am prompted to enter the engineer’s name, ID, email, and GitHub username, and I am taken back to the menu
+Once downloaded, ensure you have node installed and run "npm i" to download all dependancies. Then, run "node index.js" and answer the prompts. The file will be stored in /dist/index.html
 
-WHEN I select the intern option
-THEN I am prompted to enter the intern’s name, ID, email, and school, and I am taken back to the menu
+[example video](https://watch.screencastify.com/v/n5JZ5tSomsfQ5WLeYvvS)
 
-WHEN I decide to finish building my team
-THEN I exit the application, and the HTML is generated
+## Questions
 
-.
-├── __tests__/             //jest tests
-│   ├── Employee.test.js
-│   ├── Engineer.test.js
-│   ├── Intern.test.js
-│   └── Manager.test.js
-├── dist/                  // rendered output (HTML) and CSS style sheet      
-├── lib/                   // classes
-├── src/                   // template helper code 
-├── .gitignore             // indicates which folders and files Git should ignore
-├── index.js               // runs the application
-└── package.json          
+Have questions? feel free to reach me here:
 
-The first class is an Employee parent class with the following properties and methods:
-
-name
-
-id
-
-email
-
-getName()
-
-getId()
-
-getEmail()
-
-getRole() // Returns 'Employee'
-
-The other three classes will extend Employee.
-
-
-
-In addition to Employee's properties and methods, Manager will also have:
-
-officeNumber
-
-getRole() // Overridden to return 'Manager'
-
-
-
-In addition to Employee's properties and methods, Engineer will also have:
-
-github // GitHub username
-
-getGithub()
-
-getRole() // Overridden to return 'Engineer'
-
-
-
-In addition to Employee's properties and methods, Intern will also have:
-
-school
-
-getSchool()
-
-getRole() // Overridden to return 'Intern'
+ad5150@gmail.com
+https://github.com/ArchieDonaho
