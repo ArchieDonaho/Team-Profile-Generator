@@ -23,6 +23,34 @@ const testEngineer = [
       email: 'mark@email.com',
       github: 'MarkGithub',
       role: 'Engineer'
+    },
+    {
+      name: 'Mark',
+      id: '3',
+      email: 'mark@email.com',
+      github: 'MarkGithub',
+      role: 'Engineer'
+    },
+    {
+      name: 'Mark',
+      id: '3',
+      email: 'mark@email.com',
+      github: 'MarkGithub',
+      role: 'Engineer'
+    },
+    {
+      name: 'Mark',
+      id: '3',
+      email: 'mark@email.com',
+      github: 'MarkGithub',
+      role: 'Engineer'
+    },
+    {
+      name: 'Mark',
+      id: '3',
+      email: 'mark@email.com',
+      github: 'MarkGithub',
+      role: 'Engineer'
     }
 ]
 
@@ -40,18 +68,39 @@ const testIntern = [
       email: 'carl@email.com',
       school: 'UTSA',
       role: 'Intern'
+    },
+    {
+      name: 'Carl',
+      id: '5',
+      email: 'carl@email.com',
+      school: 'UTSA',
+      role: 'Intern'
+    },
+    {
+      name: 'Carl',
+      id: '5',
+      email: 'carl@email.com',
+      school: 'UTSA',
+      role: 'Intern'
+    },
+    {
+      name: 'Carl',
+      id: '5',
+      email: 'carl@email.com',
+      school: 'UTSA',
+      role: 'Intern'
     }
 ]
 
 
 initialize = () => {
-    const team = new Team().start();
+    // const team = new Team().start();
 
     //test
-    // html = generateHTML(testManager, testEngineer, testIntern);
-    // fs.writeFile('./dist/index.html', html, error => {
-    //     console.log('HTML Written')
-    // })
+    html = generateHTML(testManager, testEngineer, testIntern);
+    fs.writeFile('./dist/index.html', html, error => {
+        console.log('HTML Written')
+    })
 };
 
 initialize();
